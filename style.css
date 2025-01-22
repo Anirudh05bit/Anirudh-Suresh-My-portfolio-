@@ -56,10 +56,10 @@ footer{
 }
 .pht{
     height: 250px;
-    border: 2px solid black;
+    border: 2px solid cyan;
     position: relative;
    margin-left: 1200px;
-   border-radius: 10px;
+   border-radius: 0px;
    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    
 }
