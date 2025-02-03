@@ -79,4 +79,9 @@ h2{
 .pht:hover{
     border: 3px solid maroon;
 }
-
+h3{
+    text-align: center;
+}
+.ref{
+    text-align: center;
+}
