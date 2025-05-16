@@ -192,14 +192,12 @@ i{
     h1 {
         font-size: 3rem;
     }
-      body{
-        background-size: auto;
-    }
 
     .tr{
         font-size: 1.5rem;
-        padding-left: 2px;
+        padding-left: 5px;
     }
+   
 
     nav ul {
     
@@ -211,23 +209,69 @@ i{
         
         
     }
-
+    .pht{
+        height: 180px;
+        border: 2px solid cyan;
+        position: relative;
+       margin:0 auto;
+    
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       display: block;
+       
+    
+      animation: huge 1s ease-in-out;
+      animation: blight 1.5s infinite alternate;
+    }
     nav .menu {
         display: block;
-        cursor: pointer;
+    
         font-size: 2rem;
         
     }
+        body{
+            background-size: auto;
+        }
     .foot{
     
         margin: 0 auto;
     }
-     .projects{
+    .welx{
+        font-size: 50px;
+        display: none;
+    }
+    .projects{
         width: 50%;
         height: 150%;
         margin: auto;
     }
+    #picname{
+        font-size: 10px;
+    }
 }
+.ar{
+    border: 2px solid blue;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 30px;
+
+pointer-events: none;
+}
+@keyframes slideRight {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 30%;
+    }
+    100% {
+      left: 100%;
+      visibility: hidden;
+    }
+  }
+  .animate {
+    left: 300px; /* move right */
+  }
 
 
 
