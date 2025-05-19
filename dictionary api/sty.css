@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav{
+    background-color: darkcyan;
+    color: aliceblue;
+    font-size: 2.5rem;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.searchbox{
+    width: 500px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 10px;
+    position:relative;
+}
+.bodyval{
+    
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: lightcyan;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.3);
+    height: 1000px;
+    transition: all;
+    animation: co;
+    
+}
+h1{
+    font-size: 7rem;
+    margin-bottom: 100px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin;
+    animation-duration: 1s;
+}
+h2{
+    margin: 20px;
+}
+@keyframes spin{
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+      }
+    
+      to {
+        translate: 0 0;
+        scale: 100% 1;
+      }
+}
