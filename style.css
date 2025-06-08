@@ -23,6 +23,11 @@ p{
     padding: 1.5rem;
 }
 
+pre{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
 
 h1{
     text-align: center;
@@ -70,24 +75,25 @@ h1{
 }
 
 
+.pic-container{
+        height: 250px;
+        border: 2px solid cyan;
+        width: 190px;
+        position: absolute; 
+        top: 275px; 
+        left: 0;
+        border-radius: 0px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        display: block;
+        animation: imgslide 2.5s ease-in-out forwards;
 
-.pht{
-    height: 250px;
-    border: 2px solid cyan;
-    position: relative;
-   margin:0 auto;
-   border-radius: 0px;
-   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-   display: block;
-   
-
-  animation: huge 1s ease-in-out;
-  animation: blight 1.5s infinite alternate;
-  
-
-
-   
 }
+.pht {
+    height: 250px;   
+}
+
+
+
 nav {
     margin: 0 auto;
     display: flex;
@@ -139,15 +145,17 @@ h3{
 i{
     color: aliceblue
 }
-#pic{
-    
-    position: absolute;
-    right: 60px;
-    top: 40px;
-    
+
+
+@keyframes imgslide {
+  0% {
+    left: 40;
+  }
+  100% {
+    left: 80%; 
+    transform: translateX(-120%); 
+  }
 }
-
-
 @keyframes pop
 {
   0%{opacity: 0;}
@@ -214,7 +222,18 @@ i{
         font-size: 1.5rem;
         padding-left: 5px;
     }
-   
+   nav {
+    margin: 0 auto;
+    display: flex;
+    background:linear-gradient(black,#2cb5ce);
+    justify-content: space-around;
+    text-decoration: none;
+    animation: pop 1s ease-in-out;
+    height: 40px;
+    padding: .5rem;
+    
+
+}
 
     nav ul {
     
@@ -284,6 +303,31 @@ i{
 
 
 }
+
+.welcome-text {
+    position: absolute;
+    top: 300px; 
+    left: 0; 
+    font-size: 5vw;
+    z-index: 0;
+    opacity: 0;
+    animation: slideToLeftEdge 2s ease forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes slideToLeftEdge {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-15%); 
+        opacity: 1;
+    }
+}
+
+
+
 @keyframes slideRight {
     0% {
       left: -100%;
@@ -301,5 +345,13 @@ i{
   }
 
 
+.slide-right {
+    animation: textSlideIn 2s ease-in-out ;
+}
+span{
+    color: cyan;
+    text-shadow: black 2px 2px 2px;
+    font-weight: bold;
 
+}
 
